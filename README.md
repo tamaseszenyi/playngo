@@ -9,9 +9,11 @@ i.e:
 4 2 1 3 1
 ``` 
 
-## 1. Make a simple slot machine, that prints out 15 numbers in 3 rows, each number randomly selected from 0 to 4, with equal probability. Log the result to the console.
+## 1. Make a simple slot machine, that prints out 15 numbers in 3 rows, each number is randomly selected from 0 to 4 inclusive. Log the result to the console.
 
-## 2. This slot machine pays, when at least three numbers match consecutively, starting from the first number of the left side, on any row.
+## 2. Make sure each number is selected with equal probability. If not, modify the code accordingly.
+
+## 3. This slot machine pays, when at least 3 numbers match consecutively, starting from the first number of the left side, on any row.
 
 i.e: A win on the first row.
 ```
@@ -33,9 +35,9 @@ i.e this is *NOT* a win:
 2 0 0 0 0
 1 3 3 3 4
 ```
-Roll a random outcome. Log to the console if there was a win on any of the three rows.
+Roll a random outcome. Log to the console if there was a win on any of the 3 rows.
 
-## 3. The game pays on each row the following way:
+## 4. The game pays on each row the following way:
 If there was a valid win on a row, it pays `i * (s + 0.5)`$, where `i` is the number of consecutive matching numbers from left to right, and `s` is the value of the matching number. Each spin costs the player 1$.
 
 i.e
@@ -49,5 +51,5 @@ pays 3 * 2.5 + 4 * 1.5 = 13.5
 
 Estimate if it is worth offering this slot machine as a casino. What if the payout was `i * (s + 0.6)`$?
  
-## 4* Bonus math:
+## 5* Bonus math:
 What is the exact value of the average payout of this slot machine?
